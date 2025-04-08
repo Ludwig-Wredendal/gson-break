@@ -405,7 +405,8 @@ public final class Gson {
    * @return a GsonBuilder instance.
    * @since 2.8.3
    */
-  public GsonBuilder newBuilder() {
+  public GsonBuilder newBuilder() throws Exception{  
+    throw new Exception();
     return new GsonBuilder(this);
   }
 
